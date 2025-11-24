@@ -1,0 +1,58 @@
+*{ /*Reliniciamos los valores de caja con el selector universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fondo_color: #d8d8d8;
+    --fondo_caja_color: #f78888;
+    --color_texto: #000000;
+    --tamaño_fuente:20px;
+    --color_boton: #ffffff;
+    --tipo_fuente: poppins, sans-serif;
+}
+
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fondo_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu_caja{
+    width: 500px;
+    height: 70%;
+    background-color: var(--fondo_caja_color);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_navegacion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boton{
+    height: 100px;
+    width: 300px;
+    background-color: var(--color_boton);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: var(--color_texto);
+    font-family: var(--tipo_fuente);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--tamaño_fuente);
+    font-family: var(--tipo_fuente);
+}
